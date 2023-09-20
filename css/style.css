@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #6060af;
+}
+
+/* --------------------- HEADER --------------*/
+
+#header{
+    background-color: #3535a4;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    display: flex;
+    width: 100%;
+}
+
+/* ---- logo ---*/
+
+#header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+#header .logo{
+    cursor: pointer;
+}
+
+#header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* ----nav list ---*/
+#header .nav-list{
+    list-style: none;
+    
+}
+
+#header .nav-list li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+#header .nav-list li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: all 0.3s;
+}
+
+/* -crear cuenta-*/
+
+#header .nav-list li .crearcuenta{
+    color: yellow;
+}
+
+#header .nav-list li:hover{
+    transform: scale(1.2);
+}
+
+#header .nav-list li a:hover{
+    color: #bfbf66;
+}
+
+/*---------------MAIN----------------*/
+
+
+/*----box titulo---*/
+
+#main .box-titulo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    color: white;
+    align-items: center;
+}
+
+#main h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+#main h3{
+    text-align: center;
+    font-size: 24px;
+}
+
+/*-------container principal----------*/
+#main .container-principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* -----box 1-----*/
+
+#main .container-principal .box-1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #6d6d6d;
+    border-radius: 5%;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+/*--box horarios--*/
+#main .container-principal .box-1 .horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+/*---box rubros----*/
+#main .container-principal .box-1 .rubros{
+    display: flex;
+    justify-content: space-between ;
+    padding: 30px 30px ;
+}
+
+#main .container-principal .box-1 .rubros ul{
+    list-style: none;
+}
+
+
+/*----box img-1 ----*/
+#main .container-principal .img1{
+
+    width: 40%;
+    
+}
+
+#main .container-principal .img1 img{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+#main .container-principal .img2{
+    width: 40%;
+    
+}
+
+#main .container-principal .img2 img{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+#main .container-principal .ubicacion{
+    width: 40%;
+}
+
+#main .container-principal .ubicacion iframe{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+/*--------------FOOTER----------------------*/
+#footer {
+    background-color: #3535a4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    width: 100%;
+}
+
+#footer .img-footer{
+    display: flex;
+    align-items: center;
+}
+
+#footer .img-footer img{
+    width: auto;
+    height: 70px;
+}
+
+#footer .contacto{
+    display: flex;
+    align-items: center;
+}
+
+#footer .contacto-list{
+
+    list-style: none;
+}
+
+#footer .contacto-list li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#footer .contacto-list li img{
+    width: auto;
+    height: 70px;
+}
+
+
+
