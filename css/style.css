@@ -1,6 +1,173 @@
-.navbar-nav .nav-link{
-    color:#333;
-    font-weight: bold;
-    text-decoration: none;
-    margin right: 15px;
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
 }
+
+
+
+/*--------------HEADER-----------------------*/
+#header {
+    display: flex;
+    background-color: #3535a4;
+    
+}
+
+/*  -----Logo-------*/
+
+#header .logo{
+    cursor: pointer;
+}
+
+#header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+#header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/*-------nav list-----------*/
+#header .nav-list li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+#header .nav-list li a{
+    font-size: 22px;
+    color: white;
+    transition: all 0.3s;
+}
+
+#header .nav-list li:hover{
+    transform: scale(1.2);
+}
+
+#header .nav-list li a:hover{
+    color: #bfbf66;
+}
+
+/*crear cuenta*/
+#header .nav-list li .crearcuenta{
+    color: yellow;
+}
+
+/*--------------------MAIN----------------------------*/
+
+#main{
+    background-color: #6060af;
+}
+
+#main box{
+}
+
+/* ---box titulo---*/
+
+#main .box-titulos{
+    color: white;
+    padding: 30px 10px;
+}
+
+#main h1{
+    font-size: 36px;
+}
+
+#main h3{
+    font-size: 24px;
+}
+
+/*----Container box horarios y box rubros------*/
+#main .container-horarios-rubros{
+    color: white;
+    background-color: #6d6d6d;
+    border-radius: 5%;
+    height: 90%;
+}
+
+#main .container-horarios-rubros .box-horarios{
+    padding: 10px 10px;
+}
+
+
+@media (min-width: 992px) {
+    #main .container-horarios-rubros .box-rubros.large-screen {
+        margin-top: 20px; 
+        align-items: center; 
+    }
+}
+
+
+#main .container-horarios-rubros .box-rubros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main .container-horarios-rubros .box-rubros ul{
+    list-style: none;
+}
+
+
+
+#main .container .box-ubicacion iframe{
+    padding: 10px 10px;
+}
+
+/* -------------------FOOTER-----------------------*/
+
+#footer {
+    background-color: #3535a4;
+    padding 20px;
+}
+
+.container-footer {
+    text-align: center;
+}
+
+.img-footer{
+    justify-content: flex-start;
+}
+
+.img-footer img {
+    width: auto;
+    max-width: 200px;
+    height: 75px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.contacto-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.contacto-list li {
+    margin: 20px 30px; 
+}
+
+.contacto-list li img {
+    width: auto;
+    height: 75px;
+}
+
+
+
+
+
+
+
+
+
