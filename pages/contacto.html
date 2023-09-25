@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap" rel="stylesheet">
 
     <!-- CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
         </div>
   
         <!-- Boton responsive toggler -->
-        <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
   
@@ -39,19 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Inicio </a>
+              <a class="nav-link" href="/index.html"> Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/catalogo.html"> Catalogo</a>
+              <a class="nav-link" href="/pages/catalogo.html"> Catalogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html"> Contacto </a>
+              <a class="nav-link" href="/pages/contacto.html"> Contacto </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/sobrenosotros.html"> Sobre nosotros</a>
+              <a class="nav-link" href="/pages/sobrenosotros.html"> Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link crearcuenta" href="pages/crearcuenta.html"> Crear cuenta </a>
+              <a class="nav-link crearcuenta" href="/pages/crearcuenta.html"> Crear cuenta </a>
             </li>
           </ul>
         </div>
@@ -61,29 +61,71 @@
   
 
 <!--------------------------PRINCIPAL---------------------->
-<main>
+<main id="main" >
+  <section class=" container container-contacto">
+    <!--Titulo-->
+    <div class="row">
+      <div class="col-md-6 offset-md-3 ">
+        <div class="box-titulos text-center">
+          <h1 class="mb-4 text-nowrap">Autoservicio El Polirubro</h1>
+        </div>
+      </div>
+    </div>
+    <!--Informacion de contacto-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-12 col-sm-12 contacto-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Caseros 355, Urdinarrain - Entre Rios</p>
+            <p><strong>Teléfono:</strong> (3446)40-0999 </p>
+            <p><strong>Correo Electrónico:</strong> autoservicioelpolirubro@gmail.com</p>
+            <p><strong>Horario de Atención:</strong> Todos los dias: 7 AM - 11 PM</p>
+        </div>
+        <!--Redes sociales-->
+        <div class="col-lg-12 col-sm-12 redes-sociales">
+            <h2>Nuestras redes sociales</h2>
+            <a href="https://www.facebook.com/ElPoliDeUrdi/" target="_blank" class="d-block mb-2">Facebook<i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/el_polirubro_autoservicio/" target="_blank" class="d-block">Instagram<i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=%2B543446400999&data=ARDkH543R5lV5GCdCeMiFMGK5mirQBsCy8Rt7vRO3pEL-NEENQfFnUtRKaObaq1etwJmztx_AjU5ERpDYiWfEqrrdbeq3T_Ac0Xw2QG29zLDn4y9H4dAypZS4ZTJmrmtYClHJ9R6Xx8-ARpoctYeLGZ-8Q&source=FB_Page&app=facebook&entry_point=page_cta" target="_blank" class="d-block">Whatsapp<i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!--Ubicacion-->
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+          <div class="box-ubicacion text-center">
+              <!-- Google Maps iframe -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13432.358842945856!2d-58.8952069!3d-32.6836599!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b044c1fcae8699%3A0x8dee5770c98f35ab!2sEl%20POLIRUBRO%20AUTOSERVICIO!5e0!3m2!1ses-419!2sar!4v1692497796822!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-auto mb-4"></iframe>
+          </div>
+      </div>
+  </div>
+      
+
+    </div>
+  </section>
+  
+
 
 <!--------------------------FOOTER------------------------>
 <footer id="footer">
-  <div class="container-footer">
+  <div class="container container-footer">
     <section class="contacto d-flex justify-content-between align-items-center">
       <div class="img-footer">
-        <img src="images/img-footer.jpeg" alt="" class="img-fluid">
+        <img src="/images/img-footer.jpeg" alt="" class="img-fluid">
       </div>
       <ul class="contacto-list list-inline">
         <li class="list-inline-item cont">
           <a class="image-link" href="https://www.facebook.com/ElPoliDeUrdi/" target="_blank">
-            <img src="icons/logo-facebook.png" alt="" class="img-fluid">
+            <img src="/icons/logo-facebook.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.instagram.com/el_polirubro_autoservicio/" target="_blank">
-            <img src="icons/logo-instagram.png" alt="" class="img-fluid">
+            <img src="/icons/logo-instagram.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.google.com/maps/place/El+POLIRUBRO+AUTOSERVICIO/@-32.6836599,-58.8952069,15z/data=!4m6!3m5!1s0x95b044c1fcae8699:0x8dee5770c98f35ab!8m2!3d-32.6836599!4d-58.8952069!16s%2Fg%2F11gf1mcb3_?entry=ttu" target="_blank">
-            <img src="icons/logo-google.png" alt="" class="img-fluid">
+            <img src="/icons/logo-google.png" alt="" class="img-fluid">
           </a>
         </li>
       </ul>

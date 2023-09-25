@@ -3,7 +3,9 @@
     font-size: 20px;
 }
 
-
+body{
+    margin: 0;
+} 
 
 /*--------------HEADER-----------------------*/
 #header {
@@ -19,8 +21,8 @@
 }
 
 #header .logo img{
-    height: 70px;
-    width: auto;
+    height:auto;
+    max-width: 100%;
     transition: all 0.3s;
 }
 
@@ -35,7 +37,7 @@
 }
 
 #header .nav-list li a{
-    font-size: 22px;
+    font-size: 1em;
     color: white;
     transition: all 0.3s;
 }
@@ -57,24 +59,37 @@
 
 #main{
     background-color: #6060af;
+    padding-top: 20px ;
 }
 
-#main box{
-}
+
 
 /* ---box titulo---*/
 
 #main .box-titulos{
     color: white;
-    padding: 30px 10px;
 }
 
 #main h1{
-    font-size: 36px;
+    font-size: 2rem;
 }
 
+/* h1 dispositivos móviles */
+@media (max-width: 768px) {
+    #main h1 {
+        font-size: 1.6rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+}
+
+
 #main h3{
-    font-size: 24px;
+    font-size: 1rem;
+}
+
+@media (max-widht: 768px){
+    #main h3{
+        font-size: 0.8rem;
+    }
 }
 
 /*----Container box horarios y box rubros------*/
@@ -82,19 +97,15 @@
     color: white;
     background-color: #6d6d6d;
     border-radius: 5%;
-    height: 90%;
+
 }
 
 #main .container-horarios-rubros .box-horarios{
     padding: 10px 10px;
 }
 
-
-@media (min-width: 992px) {
-    #main .container-horarios-rubros .box-rubros.large-screen {
-        margin-top: 20px; 
-        align-items: center; 
-    }
+.box-horarios , .box-rubros{
+    padding: 10px;
 }
 
 
@@ -108,33 +119,127 @@
     list-style: none;
 }
 
+/*-----------Catalogo.html-------------*/
+
+.container-catalogo{
+    color: white;
+}
+
+.container-catalogo h1{
+    font-size: 1.8em;
+}
+
+.container-catalogo .producto{
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-align: center;
+    height: 9em;
+    overflow: hidden;
+}
+
+.container-catalogo .producto img{
+    max-width: 100%;
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+}
+
+.container-catalogo .producto p{
+    margin-top: 10px;
+    font-size: 0.7rem;
+}
+
+/*-------Contacto.html----------------*/
+
+.container-contacto{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.container-contacto .contacto-info{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.container-contacto  h2{
+    margin-bottom: 20px;
+    color: yellow;
+    font-size: 1.2em;
+}
 
 
-#main .container .box-ubicacion iframe{
-    padding: 10px 10px;
+.container-contacto .redes-sociales{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container-contacto .redes-sociales a{
+    font-size: 1.2em;
+    margin: 10px;
+    color: white;
+}
+
+/*-----------sobre nosotros.html-------------*/
+
+.container-sobrenosotros h2{
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.container-sobrenosotros .col-md-4{
+    margin: 20px 0;
+}
+
+.container-sobrenosotros .col-md-4 img{
+    width: auto;
+    height: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.container-sobrenosotros p{
+    color: wheat;
+}
+
+/*--------------crearcuenta.html---------------*/
+.container-crearcuenta {
+    color: white;
+    margin: 20px 0;
+}
+
+.container-crearcuenta h2{
+    color: yellow;
+    font-size: 1.2em;
 }
 
 /* -------------------FOOTER-----------------------*/
 
 #footer {
     background-color: #3535a4;
-    padding 20px;
+    
 }
 
 .container-footer {
     text-align: center;
+
 }
 
 .img-footer{
     justify-content: flex-start;
+
 }
 
 .img-footer img {
     width: auto;
-    max-width: 200px;
-    height: 75px;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    max-width: 100%;
+    height: 4rem;
+    padding-left: 10px;
+
     
 }
 
@@ -144,6 +249,7 @@
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
+    background-color: #3535a4;;
     
 }
 
@@ -152,6 +258,7 @@
     padding: 0;
     display: flex;
     margin-left: auto;
+    background-color: #3535a4;
 }
 
 .contacto-list li {
@@ -164,10 +271,15 @@
 }
 
 
+/*imagenes*/
+.img-fluid{
+    max-width: 100% ;
+    height: auto;
+}
 
 
-
-
-
-
-
+/*Google maps*/
+#main .container .box-ubicacion iframe{
+    padding: 10px 10px;
+    max-width: 100%;
+}

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>El Polirubro</title>
   
 
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap" rel="stylesheet">
 
     <!-- CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
         </div>
   
         <!-- Boton responsive toggler -->
-        <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
   
@@ -39,19 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Inicio </a>
+              <a class="nav-link" href="/index.html"> Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/catalogo.html"> Catalogo</a>
+              <a class="nav-link" href="/pages/catalogo.html"> Catalogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html"> Contacto </a>
+              <a class="nav-link" href="/pages/contacto.html"> Contacto </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/sobrenosotros.html"> Sobre nosotros</a>
+              <a class="nav-link" href="/pages/sobrenosotros.html"> Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link crearcuenta" href="pages/crearcuenta.html"> Crear cuenta </a>
+              <a class="nav-link crearcuenta" href="/pages/crearcuenta.html"> Crear cuenta </a>
             </li>
           </ul>
         </div>
@@ -61,29 +61,98 @@
   
 
 <!--------------------------PRINCIPAL---------------------->
-<main>
+<main id="main" >
+  <!--Container catalgo-->
+  <section class=" container container-catalogo">
+    <h1 class="text-center">Catálogo </h1>
+    <!--Fila 1-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-comestibles.jpeg" alt="Comestibles" class="img-fluid">
+                <p>Comestibles</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-frutasverduras.jpg" alt="Frutas y Verduras" class="img-fluid">
+                <p>Frutas y Verduras</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-bebidas.jpg" alt="Bebidas" class="img-fluid">
+                <p>Bebidas</p>
+            </div>
+        </div>
+    </div>
+    <!--Fila 2-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-vinoteca.jpeg" alt="Vinoteca" class="img-fluid">
+                <p>Vinoteca</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-fiambreria.jpg" alt="Fiambrería" class="img-fluid">
+                <p>Fiambrería</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-helados.jpg" alt="Helados" class="img-fluid">
+                <p>Helados</p>
+            </div>
+        </div>
+    </div>
+    <!--Fila 3-->
+    <div class="row d-flex justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-cigarrillos.jpg" alt="Cigarrillos" class="img-fluid">
+                <p>Cigarrillos</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-cargavirtual.jpg" alt="Carga Virtual" class="img-fluid">
+                <p>Carga Virtual</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="producto">
+                <img src="/images/img-regaleria.jpg" alt="Regalería" class="img-fluid">
+                <p>Regalería</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+
 
 <!--------------------------FOOTER------------------------>
 <footer id="footer">
-  <div class="container-footer">
+  <div class="container container-footer">
     <section class="contacto d-flex justify-content-between align-items-center">
       <div class="img-footer">
-        <img src="images/img-footer.jpeg" alt="" class="img-fluid">
+        <img src="/images/img-footer.jpeg" alt="" class="img-fluid">
       </div>
       <ul class="contacto-list list-inline">
         <li class="list-inline-item cont">
           <a class="image-link" href="https://www.facebook.com/ElPoliDeUrdi/" target="_blank">
-            <img src="icons/logo-facebook.png" alt="" class="img-fluid">
+            <img src="/icons/logo-facebook.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.instagram.com/el_polirubro_autoservicio/" target="_blank">
-            <img src="icons/logo-instagram.png" alt="" class="img-fluid">
+            <img src="/icons/logo-instagram.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.google.com/maps/place/El+POLIRUBRO+AUTOSERVICIO/@-32.6836599,-58.8952069,15z/data=!4m6!3m5!1s0x95b044c1fcae8699:0x8dee5770c98f35ab!8m2!3d-32.6836599!4d-58.8952069!16s%2Fg%2F11gf1mcb3_?entry=ttu" target="_blank">
-            <img src="icons/logo-google.png" alt="" class="img-fluid">
+            <img src="/icons/logo-google.png" alt="" class="img-fluid">
           </a>
         </li>
       </ul>

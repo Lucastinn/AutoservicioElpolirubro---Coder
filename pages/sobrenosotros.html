@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,700&display=swap" rel="stylesheet">
 
     <!-- CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
         </div>
   
         <!-- Boton responsive toggler -->
-        <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
   
@@ -39,19 +39,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="index.html"> Inicio </a>
+              <a class="nav-link" href="/index.html"> Inicio </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/catalogo.html"> Catalogo</a>
+              <a class="nav-link" href="/pages/catalogo.html"> Catalogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html"> Contacto </a>
+              <a class="nav-link" href="/pages/contacto.html"> Contacto </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/sobrenosotros.html"> Sobre nosotros</a>
+              <a class="nav-link" href="/pages/sobrenosotros.html"> Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link crearcuenta" href="pages/crearcuenta.html"> Crear cuenta </a>
+              <a class="nav-link crearcuenta" href="/pages/crearcuenta.html"> Crear cuenta </a>
             </li>
           </ul>
         </div>
@@ -61,31 +61,64 @@
   
 
 <!--------------------------PRINCIPAL---------------------->
-<main>
+<main id="main" >
+  <section class="container container-sobrenosotros">
+    <!--Titulo-->
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <div class="box-titulos">
+          <h1 class="mb-4 text-nowrap">Autoservicio El Polirubro</h1>
+        </div>
+      </div>
+    </div>
 
+    <!--Sobre nosotros parrafo-->
+    <div class="row">
+      <div class="col-md-6 offset-md-3 text-center">
+        <h2 class="mb-4">Sobre nosotros</h2>
+      </div>
+      <p>
+        El polirubro fundado el 13 de Diciembre de 2004 en la localidad de <span>Urdinarrain</span>, Entre rios, atendido por sus propios dueños y actualmente contamos con mas de 10 empleados para satisfacer a toda la clientela en un extenso horario.
+      </p>
+    </div>
+
+    <!--Imagenes el polirubro-->
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/images/img-sobrenosotros-1.jpg" class="img-fluid d-block"  alt="El Polirubro">
+      </div>
+      <div class="col-md-4">
+        <img src="/images/img-1.jpg" class="img-fluid d-block" alt="El polirubro frente">
+      </div>
+      <div class="col-md-4">
+        <img src="/images/img-sobrenosotros-2.jpg" class="img-fluid d-block" alt="Regaleria del poli">
+      </div>
+    </div>
+  </section>
+  
 
 
 <!--------------------------FOOTER------------------------>
 <footer id="footer">
-  <div class="container-footer">
+  <div class="container container-footer">
     <section class="contacto d-flex justify-content-between align-items-center">
       <div class="img-footer">
-        <img src="images/img-footer.jpeg" alt="" class="img-fluid">
+        <img src="/images/img-footer.jpeg" alt="" class="img-fluid">
       </div>
       <ul class="contacto-list list-inline">
         <li class="list-inline-item cont">
           <a class="image-link" href="https://www.facebook.com/ElPoliDeUrdi/" target="_blank">
-            <img src="icons/logo-facebook.png" alt="" class="img-fluid">
+            <img src="/icons/logo-facebook.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.instagram.com/el_polirubro_autoservicio/" target="_blank">
-            <img src="icons/logo-instagram.png" alt="" class="img-fluid">
+            <img src="/icons/logo-instagram.png" alt="" class="img-fluid">
           </a>
         </li>
         <li class="list-inline-item">
           <a class="image-link" href="https://www.google.com/maps/place/El+POLIRUBRO+AUTOSERVICIO/@-32.6836599,-58.8952069,15z/data=!4m6!3m5!1s0x95b044c1fcae8699:0x8dee5770c98f35ab!8m2!3d-32.6836599!4d-58.8952069!16s%2Fg%2F11gf1mcb3_?entry=ttu" target="_blank">
-            <img src="icons/logo-google.png" alt="" class="img-fluid">
+            <img src="/icons/logo-google.png" alt="" class="img-fluid">
           </a>
         </li>
       </ul>
