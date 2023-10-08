@@ -1,0 +1,39 @@
+/*--------------------MAIN----------------------------*/
+
+
+#main{
+    background-color: #6060af;
+    padding-top: 20px ;
+    .container-horarios-rubros{
+        color: white;
+        background-color: #6d6d6d;
+        border-radius: 5%;
+        .box-horarios{
+            padding: 10px 10px;
+        }
+        .box-rubros{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px 10px;
+        }
+        ul{
+            list-style: none;
+        }
+    
+    }
+    .img-fluid{
+        max-width: 100% ;
+        height: auto;
+    }
+    .container{
+        .box-ubicacion{
+            iframe{
+                padding: 10px 10px;
+                max-width: 100%;
+            }
+            
+        }
+    }
+}
+

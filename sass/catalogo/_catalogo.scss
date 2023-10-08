@@ -1,0 +1,28 @@
+/*-----------Catalogo.html-------------*/
+
+.container-catalogo{
+    color: white;
+    h1{
+        font-size: 1.8em;
+    }
+    .producto{
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        height: 9em;
+        overflow: hidden;
+        img{
+            max-width: 100%;
+            height: 90%;
+            width: auto;
+            object-fit: cover;
+        }
+        p{
+            margin-top: 10px;
+            font-size: 0.7rem;
+        }
+    }
+}
+

@@ -1,288 +1,221 @@
-*{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 20px;
+@charset "UTF-8";
+* {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
 }
 
-body{
-    margin: 0;
-} 
+body {
+  margin: 0;
+}
 
-/*--------------HEADER-----------------------*/
 #header {
-    display: flex;
-    background-color: #3535a4;
-    
+  display: flex;
+  background-color: #3535a4;
 }
-
-/*  -----Logo-------*/
-
-#header .logo{
-    cursor: pointer;
+#header .logo {
+  cursor: pointer;
 }
-
-#header .logo img{
-    height:auto;
-    max-width: 100%;
-    transition: all 0.3s;
+#header .logo img {
+  height: auto;
+  max-width: 100%;
+  transition: all 0.3s;
 }
-
-#header .logo img:hover{
-    transform: scale(1.2);
+#header .logo img:hover {
+  transform: scale(1.2);
 }
-
-/*-------nav list-----------*/
-#header .nav-list li{
-    display: inline-block;
-    padding: 0 30px;
+#header .nav-list li {
+  display: inline-block;
+  padding: 0 30px;
 }
-
-#header .nav-list li a{
-    font-size: 1.1em;
-    color: white;
-    transition: all 0.3s;
+#header .nav-list li a {
+  font-size: 1.1em;
+  color: white;
+  transition: all 0.3s;
 }
-
-#header .nav-list li:hover{
-    transform: scale(1.2);
+#header .nav-list li a:hover {
+  color: #bfbf66;
 }
-
-#header .nav-list li a:hover{
-    color: #bfbf66;
+#header .nav-list li :hover {
+  transform: scale(1.2);
 }
-
-/*crear cuenta*/
-#header .nav-list li .crearcuenta{
-    color: yellow;
+#header .nav-list li .crearcuenta {
+  color: yellow;
 }
-
-/*--------------------MAIN----------------------------*/
-
-#main{
-    background-color: #6060af;
-    padding-top: 20px ;
-}
-
-
 
 /* ---box titulo---*/
-
-#main .box-titulos{
-    color: white;
+#main .box-titulos {
+  color: white;
 }
-
-#main h1{
-    font-size: 2rem;
+#main h1 {
+  font-size: 2rem;
+}
+#main h3 {
+  font-size: 1rem;
 }
 
 /* h1 dispositivos móviles */
 @media (max-width: 768px) {
-    #main h1 {
-        font-size: 1.6rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
-    }
+  #main h1 {
+    font-size: 1.6rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  }
+}
+@media (max-widht: 768px) {
+  #main h3 {
+    font-size: 0.8rem;
+  }
+}
+/*--------------------MAIN----------------------------*/
+#main {
+  background-color: #6060af;
+  padding-top: 20px;
+}
+#main .container-horarios-rubros {
+  color: white;
+  background-color: #6d6d6d;
+  border-radius: 5%;
+}
+#main .container-horarios-rubros .box-horarios {
+  padding: 10px 10px;
+}
+#main .container-horarios-rubros .box-rubros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+}
+#main .container-horarios-rubros ul {
+  list-style: none;
+}
+#main .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+#main .container .box-ubicacion iframe {
+  padding: 10px 10px;
+  max-width: 100%;
 }
 
-
-#main h3{
-    font-size: 1rem;
+/* -------------------FOOTER-----------------------*/
+#footer {
+  background-color: #3535a4;
+}
+#footer .container-footer {
+  text-align: center;
+}
+#footer .container-footer .contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #3535a4;
+}
+#footer .container-footer .contacto .img-footer {
+  justify-content: flex-start;
+}
+#footer .container-footer .contacto .img-footer img {
+  width: auto;
+  max-width: 100%;
+  height: 4rem;
+  padding-left: 10px;
+}
+#footer .container-footer .contacto .contacto-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+  background-color: #3535a4;
+}
+#footer .container-footer .contacto .contacto-list li {
+  margin: 20px 30px;
+}
+#footer .container-footer .contacto .contacto-list li img {
+  width: auto;
+  height: 75px;
 }
 
-@media (max-widht: 768px){
-    #main h3{
-        font-size: 0.8rem;
-    }
-}
-
-/*----Container box horarios y box rubros------*/
-#main .container-horarios-rubros{
-    color: white;
-    background-color: #6d6d6d;
-    border-radius: 5%;
-
-}
-
-#main .container-horarios-rubros .box-horarios{
-    padding: 10px 10px;
-}
-
-.box-horarios , .box-rubros{
-    padding: 10px;
-}
-
-
-#main .container-horarios-rubros .box-rubros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#main .container-horarios-rubros .box-rubros ul{
-    list-style: none;
-}
-
+/* import pages */
 /*-----------Catalogo.html-------------*/
-
-.container-catalogo{
-    color: white;
+.container-catalogo {
+  color: white;
 }
-
-.container-catalogo h1{
-    font-size: 1.8em;
+.container-catalogo h1 {
+  font-size: 1.8em;
 }
-
-.container-catalogo .producto{
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    text-align: center;
-    height: 9em;
-    overflow: hidden;
+.container-catalogo .producto {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  height: 9em;
+  overflow: hidden;
 }
-
-.container-catalogo .producto img{
-    max-width: 100%;
-    height: 90%;
-    width: auto;
-    object-fit: cover;
+.container-catalogo .producto img {
+  max-width: 100%;
+  height: 90%;
+  width: auto;
+  object-fit: cover;
 }
-
-.container-catalogo .producto p{
-    margin-top: 10px;
-    font-size: 0.7rem;
+.container-catalogo .producto p {
+  margin-top: 10px;
+  font-size: 0.7rem;
 }
 
 /*-------Contacto.html----------------*/
-
-.container-contacto{
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
+.container-contacto {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
 }
-
-.container-contacto .contacto-info{
-    text-align: center;
-    font-size: 1em;
-    margin-bottom: 10px;
+.container-contacto .contacto-info {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
 }
-
-.container-contacto  h2{
-    margin-bottom: 20px;
-    color: yellow;
-    font-size: 1.2em;
+.container-contacto h2 {
+  margin-bottom: 20px;
+  color: yellow;
+  font-size: 1.2em;
 }
-
-
-.container-contacto .redes-sociales{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.container-contacto .redes-sociales {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-
-.container-contacto .redes-sociales a{
-    font-size: 1.2em;
-    margin: 10px;
-    color: white;
-}
-
-/*-----------sobre nosotros.html-------------*/
-
-.container-sobrenosotros h2{
-    font-size: 1.5rem;
-    color: yellow;
-}
-
-.container-sobrenosotros .box-img-sn{
-    margin: 20px 0;
-}
-
-.container-sobrenosotros .box-img-sn img{
-    width: 90%;
-    height: 90%;
-    max-height: 90%;
-    border-radius: 5px;
-    margin: 0 auto;
-}
-
-.container-sobrenosotros p{
-    color: wheat;
+.container-contacto .redes-sociales a {
+  font-size: 1.2em;
+  margin: 10px;
+  color: white;
 }
 
 /*--------------crearcuenta.html---------------*/
 .container-crearcuenta {
-    color: white;
-    margin: 20px 0;
+  color: white;
+  margin: 20px 0;
+}
+.container-crearcuenta h2 {
+  color: yellow;
+  font-size: 1.2em;
 }
 
-.container-crearcuenta h2{
-    color: yellow;
-    font-size: 1.2em;
+/*-----------sobre nosotros.html-------------*/
+.container-sobrenosotros h2 {
+  font-size: 1.5rem;
+  color: yellow;
+}
+.container-sobrenosotros .box-img-sn {
+  margin: 20px 0;
+}
+.container-sobrenosotros .box-img-sn img {
+  width: 90%;
+  height: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.container-sobrenosotros p {
+  color: wheat;
 }
 
-
-
-/* -------------------FOOTER-----------------------*/
-
-#footer {
-    background-color: #3535a4;
-    
-}
-
-.container-footer {
-    text-align: center;
-
-}
-
-.img-footer{
-    justify-content: flex-start;
-
-}
-
-.img-footer img {
-    width: auto;
-    max-width: 100%;
-    height: 4rem;
-    padding-left: 10px;
-
-    
-}
-
-.contacto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #3535a4;;
-    
-}
-
-.contacto-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-left: auto;
-    background-color: #3535a4;
-}
-
-.contacto-list li {
-    margin: 20px 30px; 
-}
-
-.contacto-list li img {
-    width: auto;
-    height: 75px;
-}
-
-
-/*imagenes*/
-.img-fluid{
-    max-width: 100% ;
-    height: auto;
-}
-
-
-/*Google maps*/
-#main .container .box-ubicacion iframe{
-    padding: 10px 10px;
-    max-width: 100%;
-}
+/*# sourceMappingURL=style.css.map */

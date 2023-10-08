@@ -1,0 +1,28 @@
+/* ---box titulo---*/
+
+#main{
+    .box-titulos{
+        color: white;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+}
+
+/* h1 dispositivos móviles */
+@media (max-width: 768px) {
+    #main h1 {
+        font-size: 1.6rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+}
+
+
+@media (max-widht: 768px){
+    #main h3{
+        font-size: 0.8rem;
+    }
+}
