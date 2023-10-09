@@ -1,11 +1,16 @@
+/*fuente y margin 0 al body*/
 @import "fuente-margin0";
 
+/*import header - nav*/
 @import "nav";
 
+/*import box-titulos*/
 @import "boxtitulo";
 
-@import "main";
+/* import styles index.html*/
+@import "index";
 
+/*import footer*/
 @import "footer";
 
 /* import pages */
