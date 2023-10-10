@@ -1,7 +1,7 @@
 /* -------------------FOOTER-----------------------*/
-
+$colorFooter: #3535a4;
 #footer{
-    background-color: #3535a4;
+    background-color: $colorFooter;
     .container-footer {
         text-align: center;
         .contacto {
@@ -10,7 +10,7 @@
             align-items: center;
             max-width: 600px;
             margin: 0 auto;
-            background-color: #3535a4;;
+            background-color: $colorFooter;
             .img-footer{
                 justify-content: flex-start;
                 img {
@@ -27,7 +27,7 @@
                 padding: 0;
                 display: flex;
                 margin-left: auto;
-                background-color: #3535a4;
+                background-color: $colorFooter;
                 li {
                     margin: 20px 30px; 
                     img {

@@ -171,6 +171,15 @@ body {
   font-size: 0.7rem;
 }
 
+@media (max-width: 767px) {
+  .container-catalogo .producto {
+    height: auto; /* Ajustar la altura automáticamente para mostrar el contenido completo */
+    padding: 10px; /* Reducir el espacio alrededor del producto */
+  }
+  .container-catalogo .producto p {
+    display: block; /* Mostrar el párrafo en dispositivos móviles */
+  }
+}
 /*-------Contacto.html----------------*/
 .container-contacto {
   padding: 20px;

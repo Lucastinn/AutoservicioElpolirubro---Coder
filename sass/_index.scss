@@ -1,12 +1,13 @@
 /*--------------------MAIN----------------------------*/
-
+$colorFondo: #6060af;
+$color_container_horarios_rubros: #6d6d6d;
 
 #main{
-    background-color: #6060af;
+    background-color: $colorFondo;
     padding-top: 20px ;
     .container-horarios-rubros{
         color: white;
-        background-color: #6d6d6d;
+        background-color: $color_container_horarios_rubros;
         border-radius: 5%;
         .box-horarios{
             padding: 10px 10px;

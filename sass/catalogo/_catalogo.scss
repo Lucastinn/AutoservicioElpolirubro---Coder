@@ -30,3 +30,14 @@
     }
 }
 
+@media (max-width: 767px) {
+    .container-catalogo {
+        .producto {
+            height: auto; /* Ajustar la altura automáticamente para mostrar el contenido completo */
+            padding: 10px; /* Reducir el espacio alrededor del producto */
+            p {
+                display: block; /* Mostrar el párrafo en dispositivos móviles */
+            }
+        }
+    }
+}

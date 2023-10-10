@@ -1,6 +1,9 @@
+$colorHeader: #3535a4;
+$colorHover: #bfbf66;
+
 #header{
     display: flex;
-    background-color: #3535a4;
+    background-color: $colorHeader;
     .logo{
         cursor: pointer;
         img{
@@ -21,7 +24,7 @@
             transition: all 0.3s;
         }
         a:hover{
-            color: #bfbf66;
+            color: $colorHover;
         }
         :hover{
             transform: scale(1.2);
