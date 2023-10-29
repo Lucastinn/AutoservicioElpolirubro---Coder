@@ -70,7 +70,7 @@ body {
 /* import styles index.html*/
 /*--------------------MAIN----------------------------*/
 #main {
-  background-color: #6060af;
+  background-image: linear-gradient(to bottom, #3939d5, #6060af);
   padding-top: 20px;
 }
 #main .container-horarios-rubros {

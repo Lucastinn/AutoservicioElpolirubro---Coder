@@ -3,7 +3,8 @@ $colorFondo: #6060af;
 $color_container_horarios_rubros: #6d6d6d;
 
 #main{
-    background-color: $colorFondo;
+    //background-color: $colorFondo;
+    background-image: linear-gradient(to bottom,#3939d5, $colorFondo );
     padding-top: 20px ;
     .container-horarios-rubros{
         color: white;
